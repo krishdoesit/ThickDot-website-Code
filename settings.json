@@ -5,13 +5,19 @@
         {
             "name": "Services",
             "submenus": [
-                { "name": "Software Development", "url": "/services/software-development" },
-                { "name": "Cloud Services and Migration", "url": "/services/cloud-services-and-migration" },
-                { "name": "Data Architecture and Management", "url": "/services/data-architecture-and-management" },
-                { "name": "DevOps and Automation", "url": "/services/devops-and-automation" },
-                { "name": "Digital Transformation Consulting", "url": "/services/digital-transformation-consulting" },
-                { "name": "Data Analytics and Business Intelligence", "url": "/services/data-analytics-and-business-intelligence" }
+                { "name": "Web Development", "url": "/services/web-development" },
+                { "name": "Mobile Development", "url": "/services/mobile-development" }
             ]
         }
+    ],
+    "footer1": [
+        { "name": "Home", "url": "/" },
+        { "name": "About", "url": "/about" },
+        { "name": "Services", "url": "/services" }
+    ],
+    "footer2": [
+        { "name": "Web Development", "url": "/services/web-development" },
+        { "name": "Cloud Services", "url": "/services/cloud-services-and-migration" },
+        { "name": "Data Architecture", "url": "/services/data-architecture-and-management" }
     ]
 }

@@ -1,5 +1,7 @@
 "use client";
 
+import { Accordion, AccordionItem } from "@nextui-org/react";
+
 import HeroSlider from "@/components/Sections/HeroSlider";
 import Service from "@/components/Cards/Service";
 import SectionDivider from "@/components/Sections/Divider";
@@ -9,6 +11,8 @@ import TechStack from "@/components/Sections/TechStack";
 import TerminalIcon from "@/components/Icons/Terminal";
 import DollarIcon from "@/components/Icons/Dollar";
 import HeartIcon from "@/components/Icons/Heart";
+
+import Image from "next/image";
 
 const projects = [
     {
@@ -91,6 +95,21 @@ const features = [
     },
 ];
 
+const faq = [
+    {
+        question: "What services do you offer?",
+        answer: "We offer a wide range of services, including software development, cloud services, data management, DevOps, digital transformation, and business intelligence.",
+    },
+    {
+        question: "How do I get started?",
+        answer: "To get started, simply contact us through our website or phone number. We'll discuss your project requirements and provide a tailored solution.",
+    },
+    {
+        question: "What is your pricing structure?",
+        answer: "Our pricing is competitive and transparent. We offer flexible payment options to suit your budget and project needs.",
+    },
+];
+
 export default function Home() {
     return (
         <>
@@ -100,7 +119,7 @@ export default function Home() {
                     <h2 className="text-4xl font-bold text-gray-700">
                         Our <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Services</span>
                     </h2>
-                    <p className="text-gray-600">We offer a wide range of services to meet your needs.</p>
+                    <p className="text-center text-gray-600">We offer a wide range of services to meet your needs.</p>
                 </div>
                 <div className="mx-auto mt-8 w-full max-w-7xl columns-1 gap-10 p-2 md:columns-2 lg:columns-3 [&>div:not(:first-child)]:mt-8">
                     {projects.map((project) => (
@@ -113,7 +132,7 @@ export default function Home() {
                 <h2 className="text-4xl font-bold text-gray-700">
                     Why <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Infinia</span> Tech?
                 </h2>
-                <p className="text-gray-600">Passionate about building software that is both functional and easy to use.</p>
+                <p className="text-center text-gray-600">Passionate about building software that is both functional and easy to use.</p>
             </div>
             <div className="max-w-8xl relative z-10 mx-auto grid grid-cols-1 py-10 md:grid-cols-2 lg:grid-cols-4">
                 {features.map((feature, index) => (
@@ -123,9 +142,9 @@ export default function Home() {
             <SectionDivider />
 
             <div className="relative mx-5 my-10 flex flex-col border-2 border-dashed border-gray-300 sm:mx-8">
-                <h1 className="px-4 py-6 text-center text-2xl font-black text-gray-700 sm:text-3xl md:text-6xl">
+                <h2 className="px-4 py-6 text-center text-2xl font-black text-gray-700 sm:text-3xl md:text-6xl">
                     Develop Your <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Dream Software</span> with Us
-                </h1>
+                </h2>
                 <div className="border-b-2 border-t-2 border-dashed border-gray-300 py-8">
                     <p className="mx-auto max-w-3xl px-4 py-6 text-center text-gray-600">Welcome to Infinia Tech Solutions, where technology and innovation meet to drive your business forward. We specialize in providing cutting-edge solutions across software development, cloud services, data management, DevOps, digital transformation, and business intelligence.</p>
                 </div>
@@ -148,6 +167,24 @@ export default function Home() {
                     <span className="absolute h-5 w-5 animate-ping rounded-full bg-primary-300"></span>
                     <span className="z-10 h-5 w-5 rounded-full bg-primary"></span>
                 </div>
+            </div>
+            <SectionDivider />
+
+            <div className="mx-3 flex flex-col items-center gap-2 sm:mx-8">
+                <h2 className="text-center text-4xl font-bold text-gray-700">
+                    Frequently Asked <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Questions</span>
+                </h2>
+                <p className="w-full text-center text-gray-600">These are some of the most frequently asked questions about our services.</p>
+            </div>
+            <div className="my-10 flex flex-col items-center justify-center gap-10 p-4 md:flex-row">
+                <Image src="/assets/images/faq.jpg" alt="FAQ" width={300} height={300} />
+                <Accordion className="h-fit max-w-3xl overflow-hidden border-gray-300" variant="bordered">
+                    {faq.map((item) => (
+                        <AccordionItem key={item.question} aria-label={item.question} title={item.question} classNames={{ content: "text-gray-600 pt-0" }}>
+                            <p>{item.answer}</p>
+                        </AccordionItem>
+                    ))}
+                </Accordion>
             </div>
         </>
     );

@@ -1,4 +1,4 @@
-export default function TwitterIcon({ fill, size, height, width, ...props }: any) {
+export default function LinkedInIcon({ fill, size, height, width, ...props }: any) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={size || width || 24} height={size || height || 24} viewBox="0 0 24 24" {...props}>
             <g fill="none" fillRule="evenodd">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Providers from "@/app/providers";
 import Navigation from "@/components/Navigation/Navigation";
+import Footer from "@/components/Footer/Footer";
 import NextTopLoader from "nextjs-toploader";
 import "@/styles/globals.css";
 
@@ -24,6 +25,7 @@ export default function RootLayout({
                     <NextTopLoader color="#3b82f6" zIndex={999} />
                     <Navigation />
                     <main className="mx-auto w-full max-w-screen-2xl">{children}</main>
+                    <Footer />
                 </Providers>
             </body>
         </html>

@@ -2,7 +2,7 @@ const SelectedText = ({ text }: { text: string }) => {
     return (
         <>
             {" "}
-            <span className="relative inline-block whitespace-nowrap border-2 border-primary pl-3 pr-6 italic text-primary">
+            <span className="relative inline-block whitespace-nowrap border-2 border-primary px-3 italic text-primary">
                 {text}{" "}
                 <span className="absolute -bottom-3 -right-3 inline-flex h-6 w-6 items-center justify-center rounded-full border-2 border-dashed border-primary bg-white">
                     <span className="absolute h-3 w-3 animate-ping rounded-full bg-primary-300"></span>
