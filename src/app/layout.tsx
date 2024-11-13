@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${inter.className} bg-dot-black/[0.2] bg-white antialiased`}>
+            <body className={`${inter.className} overflow-x-hidden bg-white antialiased`}>
                 <Providers>
                     <NextTopLoader color="#3b82f6" zIndex={999} />
                     <Navigation />
