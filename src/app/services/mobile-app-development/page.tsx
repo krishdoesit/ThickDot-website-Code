@@ -53,48 +53,28 @@ const solutions = [
 
 const techStacks = [
     {
-        name: "React",
+        name: "Flutter",
+        image: "/assets/images/technology/flutter.png",
+    },
+    {
+        name: "React Native",
         image: "/assets/images/technology/react.png",
     },
     {
-        name: "Next.js",
-        image: "/assets/images/technology/react.png",
+        name: "Swift",
+        image: "/assets/images/technology/swift.png",
     },
     {
-        name: "Node.js",
-        image: "/assets/images/technology/react.png",
+        name: "Kotlin",
+        image: "/assets/images/technology/kotlin.png",
     },
     {
-        name: "Express.js",
-        image: "/assets/images/technology/react.png",
+        name: "Firebase",
+        image: "/assets/images/technology/firebase.png",
     },
     {
-        name: "MongoDB",
-        image: "/assets/images/technology/react.png",
-    },
-    {
-        name: "PostgreSQL",
-        image: "/assets/images/technology/react.png",
-    },
-    {
-        name: "Tailwind CSS",
-        image: "/assets/images/technology/react.png",
-    },
-    {
-        name: "TypeScript",
-        image: "/assets/images/technology/react.png",
-    },
-    {
-        name: "Python",
-        image: "/assets/images/technology/react.png",
-    },
-    {
-        name: "Django",
-        image: "/assets/images/technology/react.png",
-    },
-    {
-        name: "Flask",
-        image: "/assets/images/technology/react.png",
+        name: "AWS Amplify",
+        image: "/assets/images/technology/aws.png",
     },
 ];
 
@@ -102,7 +82,7 @@ const steps = [
     {
         number: 1,
         title: "Discovery and Planning",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries..",
+        description: "We begin every web development project with a thorough discovery phase to understand your business goals, target audience, and technical requirements. Our team works closely with you to define the project scope, establish timelines, analyze technical feasibility, and create a detailed roadmap.",
         list: ["Initial consultation to gather requirements", "Define objectives, scope, and timeline", "Conduct feasibility study or technical analysis", "Create a project roadmap and budget estimation"],
         side: "left",
         image: "/assets/images/ai-technology.jpg",
@@ -110,7 +90,7 @@ const steps = [
     {
         number: 2,
         title: "Design and Prototyping",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.  ",
+        description: "We develop wireframes and user flows, create design mockups or prototypes, and gather client feedback to refine designs. We ensure the design is not only visually appealing but also functional and user-friendly. This ensures we create a solution that meets your needs and exceeds expectations.",
         list: ["Develop wireframes and user flows", "Create design mockups or prototypes", "Gather client feedback and refine designs"],
         side: "right",
         image: "/assets/images/ai-technology.jpg",
@@ -118,7 +98,7 @@ const steps = [
     {
         number: 3,
         title: "Development",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+        description: "We develop wireframes and user flows, create design mockups or prototypes, and gather client feedback to refine designs. We ensure the design is not only visually appealing but also functional and user-friendly. This ensures we create a solution that meets your needs and exceeds expectations.",
         list: ["Front-end and back-end development", "Regular progress updates and client check-ins", "Integration with third-party services, APIs, and databases"],
         side: "left",
         image: "/assets/images/ai-technology.jpg",
@@ -126,7 +106,7 @@ const steps = [
     {
         number: 4,
         title: "Testing and Quality Assurance",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+        description: "We conduct thorough testing to ensure the website is functional, secure, and meets all performance standards. This includes testing on different browsers and devices to ensure compatibility and responsiveness. This ensures we create a solution that meets your needs and exceeds expectations.",
         list: ["Conduct functional, performance, and security testing", "Gather feedback through beta testing (if applicable)", "Fix any identified issues and refine the product"],
         side: "right",
         image: "/assets/images/ai-technology.jpg",
@@ -134,7 +114,7 @@ const steps = [
     {
         number: 5,
         title: "Deployment and Launch",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+        description: "We set up hosting and domain, publish the app to relevant app stores, and ensure a smooth transition to the live environment. This ensures your website is accessible to users and performs optimally. This ensures we create a solution that meets your needs and exceeds expectations.",
         list: ["Set up hosting and domain (for web projects)", "Publish the app to relevant app stores", "Ensure smooth transition to the live environment"],
         side: "left",
         image: "/assets/images/ai-technology.jpg",
@@ -142,14 +122,14 @@ const steps = [
     {
         number: 6,
         title: "Support and Maintenance",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+        description: "We provide ongoing support and maintenance to ensure your website remains secure, up-to-date, and performs optimally. This includes regular updates, bug fixes, and monitoring to address any issues that arise. This ensures we create a solution that meets your needs and exceeds expectations.",
         list: ["Regular updates and bug fixes", "Performance monitoring and scaling as needed", "Additional features or modifications based on client feedback"],
         side: "right",
         image: "/assets/images/ai-technology.jpg",
     },
 ];
 
-const WebDevelopment = () => {
+const MobileAppDevelopment = () => {
     return (
         <>
             <div className="flex flex-col-reverse gap-10 px-6 pb-4 pt-10 md:gap-4 lg:flex-row">
@@ -157,7 +137,7 @@ const WebDevelopment = () => {
                     <h2 className="text-3xl font-bold !leading-snug text-gray-700 md:text-4xl xl:text-5xl">
                         Creating User-Friendly <SelectedText text="Mobile Applications" /> For iOS And Android.
                     </h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>We build innovative mobile applications that drive user engagement, increase brand loyalty, and achieve business goals. From concept to launch, our team creates user-friendly, high-performance apps for iOS and Android.</p>
                     <div className="mt-4 flex gap-4 md:mt-8">
                         <Button color="primary" radius="full" as={Link} href="/contact">
                             Get Service
@@ -217,4 +197,4 @@ const WebDevelopment = () => {
     );
 };
 
-export default WebDevelopment;
+export default MobileAppDevelopment;

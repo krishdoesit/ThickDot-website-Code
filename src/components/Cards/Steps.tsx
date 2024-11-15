@@ -5,7 +5,7 @@ const Steps = ({ number, title, description, list, side, image }: { number: numb
     return (
         <div className={`flex w-full ${side === "left" ? "flex-row-reverse" : ""}`}>
             <div className="relative h-fit w-full max-w-5xl shrink-0 overflow-hidden">
-                <div className="absolute right-1/2 top-0 min-w-max translate-x-1/2 rounded-b-3xl bg-primary px-8 py-2 text-medium font-semibold tracking-wide text-white drop-shadow-lg md:right-20 md:translate-x-0 md:text-xl">{title}</div>
+                <div className="absolute right-1/2 top-0 w-3/4 translate-x-1/2 rounded-b-3xl bg-primary px-4 py-2 text-center text-medium font-semibold tracking-wide text-white drop-shadow-lg md:right-20 md:w-max md:translate-x-0 md:px-8 md:text-xl">{title}</div>
                 <div className="absolute left-0 top-20 rounded-r-3xl bg-primary px-6 py-8 text-3xl font-bold text-white drop-shadow-lg md:top-1/2 md:-translate-y-1/2">{number}</div>
                 <div className="flex h-full w-full flex-col gap-6 rounded-3xl border-2 border-gray-200 p-5 md:flex-row">
                     <Image src={image} alt="About" width={1000} height={1000} className="h-fit w-full shrink-0 overflow-hidden rounded-2xl object-cover md:h-full md:w-1/3" />

@@ -6,7 +6,14 @@
             "name": "Services",
             "submenus": [
                 { "name": "Web Development", "url": "/services/web-development" },
-                { "name": "Mobile Development", "url": "/services/mobile-development" }
+                { "name": "Software Development", "url": "/services/software-development" },
+                { "name": "Mobile App Development", "url": "/services/mobile-app-development" },
+                { "name": "IT Consultancy and Strategy", "url": "/services/it-consultancy-and-strategy" },
+                { "name": "IoT Solutions", "url": "/services/iot-solutions" },
+                { "name": "Data Science and Analytics", "url": "/services/data-science-and-analytics" },
+                { "name": "Cloud Services and Migration", "url": "/services/cloud-solutions-and-migration" },
+                { "name": "Blockchain Development", "url": "/services/blockchain-development" },
+                { "name": "AI and Machine Learning", "url": "/services/ai-and-machine-learning" }
             ]
         }
     ],
@@ -17,7 +24,7 @@
     ],
     "footer2": [
         { "name": "Web Development", "url": "/services/web-development" },
-        { "name": "Cloud Services", "url": "/services/cloud-services-and-migration" },
-        { "name": "Data Architecture", "url": "/services/data-architecture-and-management" }
+        { "name": "Software Development", "url": "/services/software-development" },
+        { "name": "Mobile App Development", "url": "/services/mobile-app-development" }
     ]
 }

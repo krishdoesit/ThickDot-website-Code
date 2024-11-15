@@ -10,8 +10,50 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+import { sendEmail } from "@/lib/email/contact";
+import { toast } from "sonner";
+
 const Contact = () => {
-    const [selected, setSelected] = useState("london");
+    const [email, setEmail] = useState("");
+    const [name, setName] = useState("");
+    const [company, setCompany] = useState("");
+    const [phone, setPhone] = useState("");
+    const [message, setMessage] = useState("");
+    const [subject, setSubject] = useState("general");
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        // Manual validation for each field
+        if (!name || !company || !email || !phone || !subject || !message) {
+            toast.error("Please fill in all required fields.");
+            return;
+        }
+
+        const html = `
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Company:</strong> ${company}</p>
+            <p><strong>Phone:</strong> ${phone}</p>
+            <br />
+            <p><strong>Subject:</strong> ${subject}</p>
+            <p><strong>Message:</strong></p>
+            <p>${message.replace(/\n/g, "<br>")}</p>
+        `;
+        const response = await sendEmail(name, email, "New message from Infinia Tech Solutions", html);
+
+        if (response) {
+            toast.success("Message sent successfully!");
+        } else {
+            toast.error("Failed to send message. Please try again later.");
+        }
+
+        setEmail("");
+        setName("");
+        setCompany("");
+        setPhone("");
+        setMessage("");
+        setSubject("general");
+    };
 
     return (
         <>
@@ -53,18 +95,18 @@ const Contact = () => {
                 </div>
 
                 <div className="w-full lg:w-1/2">
-                    <form className="flex flex-col gap-6 px-8 pt-8">
+                    <form className="flex flex-col gap-6 px-8 pt-8" onSubmit={handleSubmit}>
                         <div className="flex flex-col gap-6 md:flex-row">
-                            <Input label="Your Name" variant="underlined" />
-                            <Input label="Company Name" variant="underlined" />
+                            <Input label="Your Name" variant="underlined" value={name} onValueChange={setName} isRequired required />
+                            <Input label="Company Name" variant="underlined" value={company} onValueChange={setCompany} isRequired required />
                         </div>
                         <div className="flex flex-col gap-6 md:flex-row">
-                            <Input label="Email" variant="underlined" />
-                            <Input label="Phone" variant="underlined" />
+                            <Input label="Email" variant="underlined" type="email" value={email} onValueChange={setEmail} isRequired required />
+                            <Input label="Phone" variant="underlined" maxLength={14} value={phone} onValueChange={setPhone} isRequired required />
                         </div>
                         {/* Select Subject */}
                         <div className="mt-4">
-                            <RadioGroup value={selected} onValueChange={setSelected} label="Select Subject" orientation="horizontal" classNames={{ label: "text-small", wrapper: "gap-4" }}>
+                            <RadioGroup value={subject} onValueChange={setSubject} label="Select Subject" orientation="horizontal" classNames={{ label: "text-small", wrapper: "gap-4" }} isRequired>
                                 <Radio value="general" classNames={{ label: "text-gray-600" }}>
                                     General Inquiry
                                 </Radio>
@@ -80,9 +122,9 @@ const Contact = () => {
                             </RadioGroup>
                         </div>
                         <div className="mt-2">
-                            <Textarea label="Message" variant="underlined" />
+                            <Textarea label="Message" variant="underlined" value={message} onValueChange={setMessage} isRequired required />
                         </div>
-                        <Button color="primary" className="ml-auto mt-6 w-fit">
+                        <Button color="primary" className="ml-auto mt-6 w-fit" type="submit">
                             Send Message
                         </Button>
                         <Image src="/assets/images/letter-send.png" alt="Letter Send" width={266} height={136} quality={100} className="ml-auto mr-10" />

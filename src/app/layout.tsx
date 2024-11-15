@@ -4,6 +4,7 @@ import Providers from "@/app/providers";
 import Navigation from "@/components/Navigation/Navigation";
 import Footer from "@/components/Footer/Footer";
 import NextTopLoader from "nextjs-toploader";
+import { Toaster } from "sonner";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({
                     <Navigation />
                     <main className="mx-auto w-full max-w-screen-2xl">{children}</main>
                     <Footer />
+                    <Toaster richColors theme="system" toastOptions={{ className: "shadow" }} />
                 </Providers>
             </body>
         </html>
