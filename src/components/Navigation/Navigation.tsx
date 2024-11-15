@@ -15,6 +15,10 @@ const Navigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
+    const [isOpen, setIsOpen] = useState(false);
+    const [timeoutId, setTimeoutId] = useState<any>(null);
+    const delay = 500;
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 10);
@@ -27,16 +31,37 @@ const Navigation = () => {
         return NavItems.map((item: any) => {
             if (item.submenus) {
                 return (
-                    <Dropdown key={item.name} className="mt-4 rounded-xl border border-divider bg-white shadow backdrop-blur-md">
+                    <Dropdown key={item.name} isOpen={isOpen} className="mt-2 rounded-xl border border-divider bg-white shadow backdrop-blur-md">
                         <NavbarItem>
                             <DropdownTrigger>
-                                <Button size="sm" radius="full" className="bg-transparent px-3 py-1.5 text-base font-medium text-gray-700 hover:bg-gray-100 hover:backdrop-blur-sm">
+                                <Button
+                                    size="sm"
+                                    radius="full"
+                                    onMouseEnter={() => {
+                                        clearTimeout(timeoutId);
+                                        setIsOpen(true);
+                                    }}
+                                    onMouseLeave={() => {
+                                        const id = setTimeout(() => setIsOpen(false), delay);
+                                        setTimeoutId(id);
+                                    }}
+                                    className="border-none bg-transparent px-3 py-1.5 text-base font-medium text-gray-700 hover:bg-gray-100 hover:backdrop-blur-sm"
+                                >
                                     {item.name}
                                     <ChevronDownIcon size={16} />
                                 </Button>
                             </DropdownTrigger>
                         </NavbarItem>
-                        <DropdownMenu itemClasses={{ base: "gap-2" }}>
+                        <DropdownMenu
+                            itemClasses={{ base: "gap-2" }}
+                            onMouseEnter={() => {
+                                clearTimeout(timeoutId);
+                                setIsOpen(true);
+                            }}
+                            onMouseLeave={() => {
+                                setIsOpen(false);
+                            }}
+                        >
                             {item.submenus.map((subItem: any) => {
                                 return (
                                     <DropdownItem key={subItem.name} className="text-gray-600 data-[hover=true]:bg-gray-100" onPress={() => router.push(subItem.url)}>

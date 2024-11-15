@@ -134,7 +134,7 @@ const About = () => {
                     <ul className="flex flex-col gap-4">
                         {heroList.map((item, index) => (
                             <li className="flex gap-2 text-xl text-gray-200" key={index}>
-                                <TickIcon className="mb-auto text-teal-500" size={28} /> <p className="my-auto">{item}</p>
+                                <TickIcon className="mb-auto mt-0.5 shrink-0 text-teal-500" size={28} /> <p className="my-auto">{item}</p>
                             </li>
                         ))}
                     </ul>
