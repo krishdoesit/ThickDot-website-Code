@@ -26,5 +26,14 @@
         { "name": "Web Development", "url": "/services/web-development" },
         { "name": "Software Development", "url": "/services/software-development" },
         { "name": "Mobile App Development", "url": "/services/mobile-app-development" }
+    ],
+    "footer3": [
+        { "name": "Privacy Policy", "url": "/privacy-policy" },
+        { "name": "Terms of Service", "url": "/terms-of-service" },
+        { "name": "DMCA", "url": "/dmca" }
+    ],
+    "social": [
+        { "name": "Twitter", "url": "https://www.twitter.com" },
+        { "name": "LinkedIn", "url": "https://www.linkedin.com" }
     ]
 }

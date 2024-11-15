@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const slides = [
@@ -40,7 +41,7 @@ export default function HeroSlider() {
     };
 
     return (
-        <div className="flex h-fit flex-col gap-6 px-4 py-4 md:min-h-[calc(100dvh-100px)] md:flex-row md:py-8 xl:px-8">
+        <div className="flex h-fit max-h-[752px] flex-col gap-6 px-4 py-4 md:flex-row md:py-8 xl:px-8">
             <div className="flex flex-1 flex-col gap-10 rounded-2xl bg-primary-500 p-10 md:p-16">
                 <div className="flex flex-col gap-4">
                     <span className="bg-gradient-to-t from-slate-100 via-blue-200 to-indigo-200 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl 2xl:text-8xl">Create.</span>
@@ -49,10 +50,10 @@ export default function HeroSlider() {
                 </div>
                 <p className="w-full text-lg text-gray-100 md:w-3/4 md:text-xl">Transform your brand, unleash the power of digital with us and turn bold visions into market success. We are a team of passionate individuals who are dedicated to helping you achieve your goals.</p>
                 <div className="mt-auto flex flex-col gap-6 md:flex-row">
-                    <Button variant="solid" className="bg-gray-50 font-medium text-gray-700" radius="full" size="lg">
+                    <Button variant="solid" className="bg-gray-50 font-medium text-gray-700" radius="full" size="lg" as={Link} href="/contact">
                         Get Started
                     </Button>
-                    <Button variant="flat" className="bg-white/20 font-medium text-gray-100 backdrop-blur" radius="full" size="lg">
+                    <Button variant="flat" className="bg-white/20 font-medium text-gray-100 backdrop-blur" radius="full" size="lg" as={Link} href="/services">
                         Explore Services
                     </Button>
                 </div>
@@ -73,7 +74,7 @@ export default function HeroSlider() {
                 {/* Navigation Dots */}
                 <div className="absolute left-1/2 top-4 flex -translate-x-1/2 transform gap-2">
                     {slides.map((_, index) => (
-                        <button key={index} onClick={() => handleDotClick(index)} className={`h-2.5 w-2.5 rounded-full border-1.5 border-white ${index === currentSlide ? "bg-white" : "bg-transparent"}`}></button>
+                        <button key={index} onClick={() => handleDotClick(index)} className={`h-3 w-3 rounded-full border-2 border-white ${index === currentSlide ? "bg-white" : "bg-transparent"}`}></button>
                     ))}
                 </div>
             </div>

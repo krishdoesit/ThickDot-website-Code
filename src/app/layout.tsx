@@ -8,7 +8,10 @@ import { Toaster } from "sonner";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-    title: "Infinia Tech Solutions",
+    title: {
+        default: "Infinia Tech Solutions",
+        template: "%s - Infinia Tech Solutions",
+    },
     description: "Get your business online with Infinia Tech Solutions",
 };
 
@@ -21,6 +24,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <link rel="apple-touch-icon" sizes="180x180" href={"/favicons/apple-touch-icon.png"} />
+                <link rel="icon" type="image/png" sizes="32x32" href={"/favicons/favicon-32x32.png"} />
+                <link rel="icon" type="image/png" sizes="16x16" href={"/favicons/favicon-16x16.png"} />
+                <link rel="manifest" href={"/assets/favicons/site.webmanifest"} />
+            </head>
             <body className={`${inter.className} overflow-x-hidden bg-white antialiased`}>
                 <Providers>
                     <NextTopLoader color="#3b82f6" zIndex={999} />

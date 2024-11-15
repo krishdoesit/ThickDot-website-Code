@@ -9,6 +9,7 @@ import { Input, RadioGroup, Radio, Textarea, Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import settings from "@/../../settings.json";
 
 import { sendEmail } from "@/lib/email/contact";
 import { toast } from "sonner";
@@ -61,7 +62,7 @@ const Contact = () => {
                 <h2 className="text-3xl font-bold text-gray-800 md:text-4xl">Get in touch</h2>
                 <p className="text-center text-lg font-medium text-gray-600">Any question or remarks? Just write us a message!</p>
             </div>
-            <div className="mx-4 my-10 flex w-auto flex-col rounded-3xl border border-gray-200 bg-gray-50 drop-shadow-sm lg:flex-row">
+            <div className="mx-4 my-10 flex w-auto flex-col rounded-3xl border border-gray-200 bg-gray-50 shadow-sm lg:flex-row">
                 <div className="w-full p-4 lg:w-1/2">
                     <div className="relative flex h-full w-full flex-col justify-between gap-16 overflow-hidden rounded-2xl bg-gray-900 p-6 text-white md:p-10">
                         <div>
@@ -83,10 +84,10 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="flex gap-6">
-                            <Link href="#" className="text-gray-300 hover:text-gray-400">
+                            <Link href={settings.social[0].url} className="text-gray-300 hover:text-gray-400">
                                 <TwitterIcon size={28} />
                             </Link>
-                            <Link href="#" className="text-gray-300 hover:text-gray-400">
+                            <Link href={settings.social[1].url} className="text-gray-300 hover:text-gray-400">
                                 <LinkedInIcon size={28} />
                             </Link>
                         </div>

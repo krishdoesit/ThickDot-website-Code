@@ -1,12 +1,21 @@
+import { Metadata } from "next";
 import SelectedText from "@/components/Animation/SelectedText";
 import Solution from "@/components/Cards/Solution";
 import SectionDivider from "@/components/Sections/Divider";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
-import ShieldIcon from "@/components/Icons/Shield";
 import TechStack from "@/components/Cards/TechStack";
 import Steps from "@/components/Cards/Steps";
+import RefreshIcon from "@/components/Icons/Filled/Refresh";
+import ChargeIcon from "@/components/Icons/Filled/Charge";
+import ScannerIcon from "@/components/Icons/Filled/Scanner";
+import BuildingsIcon from "@/components/Icons/Filled/Buildings";
+
+export const metadata: Metadata = {
+    title: "IT Consultancy & Strategy",
+    description: "We offer a range of IT consultancy and strategy services to help businesses leverage technology for growth and success.",
+};
 
 const steps = [
     {
@@ -15,7 +24,7 @@ const steps = [
         description: "Conduct comprehensive evaluation of your current IT infrastructure, business processes, and challenges. Our experts identify opportunities for optimization and create a strategic roadmap for transformation.",
         list: ["Infrastructure assessment", "Process gap analysis", "Risk evaluation", "Technology stack review"],
         side: "left",
-        image: "/assets/images/ai-technology.jpg",
+        image: "/assets/images/approach/analysis.jpg",
     },
     {
         number: 2,
@@ -23,7 +32,7 @@ const steps = [
         description: "Develop a tailored IT strategy that aligns with your business objectives. We create detailed implementation plans, resource allocation strategies, and ROI projections to ensure successful outcomes.",
         list: ["Digital roadmap creation", "Technology selection", "Budget planning", "Risk mitigation strategies"],
         side: "right",
-        image: "/assets/images/ai-technology.jpg",
+        image: "/assets/images/approach/development.jpg",
     },
     {
         number: 3,
@@ -31,7 +40,7 @@ const steps = [
         description: "Transform strategies into actionable solutions. Our team designs scalable, future-proof architectures and systems that address your specific needs while ensuring optimal performance and security.",
         list: ["Architecture design", "Security framework", "Integration planning", "Scalability solutions"],
         side: "left",
-        image: "/assets/images/ai-technology.jpg",
+        image: "/assets/images/approach/design.jpg",
     },
     {
         number: 4,
@@ -39,7 +48,7 @@ const steps = [
         description: "Provide comprehensive guidance for solution implementation. We work closely with your team to ensure smooth execution, knowledge transfer, and successful adoption of new technologies.",
         list: ["Implementation roadmap", "Change management plan", "Team training programs", "Progress monitoring"],
         side: "right",
-        image: "/assets/images/ai-technology.jpg",
+        image: "/assets/images/approach/implementation.jpg",
     },
 ];
 
@@ -47,22 +56,22 @@ const solutions = [
     {
         title: "Digital Transformation",
         description: "Comprehensive digital transformation strategies to modernize your business operations and enhance competitive advantage.",
-        icon: <ShieldIcon />,
+        icon: <BuildingsIcon />,
     },
     {
         title: "Technology Advisory",
         description: "Expert guidance on technology selection, implementation, and optimization to achieve maximum business value.",
-        icon: <ShieldIcon />,
+        icon: <ChargeIcon />,
     },
     {
         title: "Process Optimization",
         description: "Streamline business processes through innovative technology solutions and industry best practices.",
-        icon: <ShieldIcon />,
+        icon: <ScannerIcon />,
     },
     {
         title: "Change Management",
         description: "Guide your organization through technological change with minimal disruption and maximum adoption.",
-        icon: <ShieldIcon />,
+        icon: <RefreshIcon />,
     },
 ];
 
@@ -94,8 +103,8 @@ const ItConsultancyAndStrategy = () => {
                         <Button color="primary" radius="full" as={Link} href="/contact">
                             Get Service
                         </Button>
-                        <Button variant="flat" className="bg-gray-200" radius="full">
-                            Learn More
+                        <Button variant="flat" className="bg-gray-200" radius="full" as={Link} href="/about">
+                            About Us
                         </Button>
                     </div>
                 </div>
@@ -107,10 +116,10 @@ const ItConsultancyAndStrategy = () => {
 
             <div className="flex flex-col gap-10 px-6">
                 <div className="mx-3 mb-8 flex flex-col items-center gap-2 sm:mx-8">
-                    <h2 className="text-4xl font-bold text-gray-700">
+                    <h2 className="text-center text-4xl font-bold text-gray-700">
                         <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Approach</span> To Be Used
                     </h2>
-                    <p className="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p className="text-center text-gray-600">How we work to deliver the best web development solutions.</p>
                 </div>
                 {steps.map((step) => (
                     <Steps key={step.number} number={step.number} title={step.title} description={step.description} list={step.list} side={step.side as "left" | "right"} image={step.image} />
@@ -120,10 +129,10 @@ const ItConsultancyAndStrategy = () => {
             <SectionDivider />
             <div className="flex flex-col gap-10 px-6">
                 <div className="mx-3 flex flex-col items-center gap-2 sm:mx-8">
-                    <h2 className="text-4xl font-bold text-gray-700">
+                    <h2 className="text-center text-4xl font-bold text-gray-700">
                         What <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">We Are Doing</span> For This?
                     </h2>
-                    <p className="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p className="text-center text-gray-600">We offer a range of solutions to meet your unique needs and deliver exceptional results.</p>
                 </div>
                 <div className="columns-1 gap-4 p-2 md:columns-2 lg:columns-3 xl:columns-4 [&>div:not(:first-child)]:mt-4">
                     {solutions.map((solution) => (
@@ -134,10 +143,10 @@ const ItConsultancyAndStrategy = () => {
             <SectionDivider />
             <div className="flex flex-col gap-10 px-6">
                 <div className="mx-3 flex flex-col items-center gap-2 sm:mx-8">
-                    <h2 className="text-4xl font-bold text-gray-700">
-                        <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Tech Stak</span> We Leverage
+                    <h2 className="text-center text-4xl font-bold text-gray-700">
+                        <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Tech Stack</span> We Leverage
                     </h2>
-                    <p className="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p className="text-center text-gray-600">We use the latest technologies and tools to build and drive growth.</p>
                 </div>
                 <div className="mx-auto flex max-w-5xl flex-wrap justify-center gap-8">
                     {techStacks.map((techStack) => (

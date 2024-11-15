@@ -1,48 +1,109 @@
+import { Metadata } from "next";
 import SelectedText from "@/components/Animation/SelectedText";
 import Solution from "@/components/Cards/Solution";
 import SectionDivider from "@/components/Sections/Divider";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
-import ShieldIcon from "@/components/Icons/Shield";
 import TechStack from "@/components/Cards/TechStack";
 import Steps from "@/components/Cards/Steps";
+import LaptopIcon from "@/components/Icons/Filled/Laptop";
+import CartIcon from "@/components/Icons/Filled/Cart";
+import FileIcon from "@/components/Icons/Filled/File";
+import PaintIcon from "@/components/Icons/Filled/Paint";
+import CodeIcon from "@/components/Icons/Filled/Code";
+
+export const metadata: Metadata = {
+    title: "Web Development",
+    description: "We create stunning, modern web applications that drive business growth. Our expert team combines cutting-edge technology with user-centric design to deliver seamless digital experiences that engage users and achieve your business objectives.",
+};
+
+const steps = [
+    {
+        number: 1,
+        title: "Discovery and Planning",
+        description: "We begin every web development project with a thorough discovery phase to understand your business goals, target audience, and technical requirements. Our team works closely with you to define the project scope, establish timelines, analyze technical feasibility, and create a detailed roadmap.",
+        list: ["Initial consultation to gather requirements", "Define objectives, scope, and timeline", "Conduct feasibility study or technical analysis", "Create a project roadmap and budget estimation"],
+        side: "left",
+        image: "/assets/images/approach/planning.jpg",
+    },
+    {
+        number: 2,
+        title: "Design and Prototyping",
+        description: "We develop wireframes and user flows, create design mockups or prototypes, and gather client feedback to refine designs. We ensure the design is not only visually appealing but also functional and user-friendly. This ensures we create a solution that meets your needs and exceeds expectations.",
+        list: ["Develop wireframes and user flows", "Create design mockups or prototypes", "Gather client feedback and refine designs"],
+        side: "right",
+        image: "/assets/images/approach/design.jpg",
+    },
+    {
+        number: 3,
+        title: "Development",
+        description: "We develop wireframes and user flows, create design mockups or prototypes, and gather client feedback to refine designs. We ensure the design is not only visually appealing but also functional and user-friendly. This ensures we create a solution that meets your needs and exceeds expectations.",
+        list: ["Front-end and back-end development", "Regular progress updates and client check-ins", "Integration with third-party services, APIs, and databases"],
+        side: "left",
+        image: "/assets/images/approach/development.jpg",
+    },
+    {
+        number: 4,
+        title: "Testing and Quality Assurance",
+        description: "We conduct thorough testing to ensure the website is functional, secure, and meets all performance standards. This includes testing on different browsers and devices to ensure compatibility and responsiveness. This ensures we create a solution that meets your needs and exceeds expectations.",
+        list: ["Conduct functional, performance, and security testing", "Gather feedback through beta testing (if applicable)", "Fix any identified issues and refine the product"],
+        side: "right",
+        image: "/assets/images/approach/testing.jpg",
+    },
+    {
+        number: 5,
+        title: "Deployment and Launch",
+        description: "We set up hosting and domain, publish the app to relevant app stores, and ensure a smooth transition to the live environment. This ensures your website is accessible to users and performs optimally. This ensures we create a solution that meets your needs and exceeds expectations.",
+        list: ["Set up hosting and domain (for web projects)", "Publish the app to relevant app stores", "Ensure smooth transition to the live environment"],
+        side: "left",
+        image: "/assets/images/approach/deployment.jpg",
+    },
+    {
+        number: 6,
+        title: "Support and Maintenance",
+        description: "We provide ongoing support and maintenance to ensure your website remains secure, up-to-date, and performs optimally. This includes regular updates, bug fixes, and monitoring to address any issues that arise. This ensures we create a solution that meets your needs and exceeds expectations.",
+        list: ["Regular updates and bug fixes", "Performance monitoring and scaling as needed", "Additional features or modifications based on client feedback"],
+        side: "right",
+        image: "/assets/images/approach/support.jpg",
+    },
+];
 
 const solutions = [
     {
         title: "Custom Website Development",
         description: "Tailored websites built to meet unique business requirements, using modern frameworks like React, Angular, or Vue.js.",
-        icon: <ShieldIcon />,
+        icon: <LaptopIcon />,
     },
     {
         title: "E-commerce Solutions",
         description: "Scalable and secure online stores with features like product management, payment gateway integration, and analytics.",
-        icon: <ShieldIcon />,
+        icon: <CartIcon />,
     },
     {
         title: "CMS Development",
         description: "Flexible content management systems (e.g., WordPress, Drupal) to empower your team to manage and update content with ease.",
-        icon: <ShieldIcon />,
+        icon: <FileIcon />,
     },
     {
         title: "Responsive Design",
         description: "Optimized websites that adapt seamlessly to various devices, ensuring a consistent and user-friendly experience across desktops, tablets, and smartphones.",
-        icon: <ShieldIcon />,
+        icon: <PaintIcon />,
     },
     {
         title: "Web Application Development",
         description: "High-performance applications designed for speed, reliability, and scalability. Built using cutting-edge technologies and best practices.",
-        icon: <ShieldIcon />,
+        icon: <LaptopIcon />,
     },
     {
         title: "Website Maintenance",
         description: "Regular updates, bug fixes, and performance improvements to keep your site running smoothly.",
-        icon: <ShieldIcon />,
+        icon: <LaptopIcon />,
     },
     {
         title: "API Integration",
         description: "Seamlessly connect your website with third-party platforms, such as payment gateways, CRMs, or social media tools.",
-        icon: <ShieldIcon />,
+        icon: <CodeIcon />,
     },
 ];
 
@@ -69,57 +130,6 @@ const techStacks = [
     },
 ];
 
-const steps = [
-    {
-        number: 1,
-        title: "Discovery and Planning",
-        description: "We begin every web development project with a thorough discovery phase to understand your business goals, target audience, and technical requirements. Our team works closely with you to define the project scope, establish timelines, analyze technical feasibility, and create a detailed roadmap.",
-        list: ["Initial consultation to gather requirements", "Define objectives, scope, and timeline", "Conduct feasibility study or technical analysis", "Create a project roadmap and budget estimation"],
-        side: "left",
-        image: "/assets/images/ai-technology.jpg",
-    },
-    {
-        number: 2,
-        title: "Design and Prototyping",
-        description: "We develop wireframes and user flows, create design mockups or prototypes, and gather client feedback to refine designs. We ensure the design is not only visually appealing but also functional and user-friendly. This ensures we create a solution that meets your needs and exceeds expectations.",
-        list: ["Develop wireframes and user flows", "Create design mockups or prototypes", "Gather client feedback and refine designs"],
-        side: "right",
-        image: "/assets/images/ai-technology.jpg",
-    },
-    {
-        number: 3,
-        title: "Development",
-        description: "We develop wireframes and user flows, create design mockups or prototypes, and gather client feedback to refine designs. We ensure the design is not only visually appealing but also functional and user-friendly. This ensures we create a solution that meets your needs and exceeds expectations.",
-        list: ["Front-end and back-end development", "Regular progress updates and client check-ins", "Integration with third-party services, APIs, and databases"],
-        side: "left",
-        image: "/assets/images/ai-technology.jpg",
-    },
-    {
-        number: 4,
-        title: "Testing and Quality Assurance",
-        description: "We conduct thorough testing to ensure the website is functional, secure, and meets all performance standards. This includes testing on different browsers and devices to ensure compatibility and responsiveness. This ensures we create a solution that meets your needs and exceeds expectations.",
-        list: ["Conduct functional, performance, and security testing", "Gather feedback through beta testing (if applicable)", "Fix any identified issues and refine the product"],
-        side: "right",
-        image: "/assets/images/ai-technology.jpg",
-    },
-    {
-        number: 5,
-        title: "Deployment and Launch",
-        description: "We set up hosting and domain, publish the app to relevant app stores, and ensure a smooth transition to the live environment. This ensures your website is accessible to users and performs optimally. This ensures we create a solution that meets your needs and exceeds expectations.",
-        list: ["Set up hosting and domain (for web projects)", "Publish the app to relevant app stores", "Ensure smooth transition to the live environment"],
-        side: "left",
-        image: "/assets/images/ai-technology.jpg",
-    },
-    {
-        number: 6,
-        title: "Support and Maintenance",
-        description: "We provide ongoing support and maintenance to ensure your website remains secure, up-to-date, and performs optimally. This includes regular updates, bug fixes, and monitoring to address any issues that arise. This ensures we create a solution that meets your needs and exceeds expectations.",
-        list: ["Regular updates and bug fixes", "Performance monitoring and scaling as needed", "Additional features or modifications based on client feedback"],
-        side: "right",
-        image: "/assets/images/ai-technology.jpg",
-    },
-];
-
 const WebDevelopment = () => {
     return (
         <>
@@ -133,8 +143,8 @@ const WebDevelopment = () => {
                         <Button color="primary" radius="full" as={Link} href="/contact">
                             Get Service
                         </Button>
-                        <Button variant="flat" className="bg-gray-200" radius="full">
-                            Learn More
+                        <Button variant="flat" className="bg-gray-200" radius="full" as={Link} href="/about">
+                            About Us
                         </Button>
                     </div>
                 </div>
@@ -146,10 +156,10 @@ const WebDevelopment = () => {
 
             <div className="flex flex-col gap-10 px-6">
                 <div className="mx-3 mb-8 flex flex-col items-center gap-2 sm:mx-8">
-                    <h2 className="text-4xl font-bold text-gray-700">
+                    <h2 className="text-center text-4xl font-bold text-gray-700">
                         <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Approach</span> To Be Used
                     </h2>
-                    <p className="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p className="text-center text-gray-600">How we work to deliver the best web development solutions.</p>
                 </div>
                 {steps.map((step) => (
                     <Steps key={step.number} number={step.number} title={step.title} description={step.description} list={step.list} side={step.side as "left" | "right"} image={step.image} />
@@ -159,10 +169,10 @@ const WebDevelopment = () => {
             <SectionDivider />
             <div className="flex flex-col gap-10 px-6">
                 <div className="mx-3 flex flex-col items-center gap-2 sm:mx-8">
-                    <h2 className="text-4xl font-bold text-gray-700">
+                    <h2 className="text-center text-4xl font-bold text-gray-700">
                         What <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">We Are Doing</span> For This?
                     </h2>
-                    <p className="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p className="text-center text-gray-600">We offer a range of solutions to meet your unique needs and deliver exceptional results.</p>
                 </div>
                 <div className="columns-1 gap-4 p-2 md:columns-2 lg:columns-3 xl:columns-4 [&>div:not(:first-child)]:mt-4">
                     {solutions.map((solution) => (
@@ -173,10 +183,10 @@ const WebDevelopment = () => {
             <SectionDivider />
             <div className="flex flex-col gap-10 px-6">
                 <div className="mx-3 flex flex-col items-center gap-2 sm:mx-8">
-                    <h2 className="text-4xl font-bold text-gray-700">
-                        <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Tech Stak</span> We Leverage
+                    <h2 className="text-center text-4xl font-bold text-gray-700">
+                        <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Tech Stack</span> We Leverage
                     </h2>
-                    <p className="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p className="text-center text-gray-600">We use the latest technologies and tools to build and drive growth.</p>
                 </div>
                 <div className="mx-auto flex max-w-5xl flex-wrap justify-center gap-8">
                     {techStacks.map((techStack) => (

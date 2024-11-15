@@ -1,10 +1,15 @@
 import React, { forwardRef, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/Animation/AnimatedBeam";
+import Link from "next/link";
 
-import TerminalIcon from "@/components/Icons/Terminal";
 import UserIcon from "@/components/Icons/User";
 import ShieldIcon from "@/components/Icons/Shield";
+import LaptopIcon from "@/components/Icons/Laptop";
+import MobileIcon from "@/components/Icons/Mobile";
+import CloudServerIcon from "@/components/Icons/CloudServer";
+import ProcessorIcon from "@/components/Icons/Processor";
+import CalculatorIcon from "@/components/Icons/Calculator";
 
 const TechStack = () => {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -20,21 +25,31 @@ const TechStack = () => {
         <div className={cn("relative flex h-[400px] w-full items-center justify-center overflow-hidden p-10")} ref={containerRef}>
             <div className="flex size-full max-w-2xl flex-row items-stretch justify-between gap-10">
                 <div className="flex flex-col justify-center gap-4">
-                    <Circle ref={div1Ref}>
-                        <TerminalIcon className="text-teal-500" />
-                    </Circle>
-                    <Circle ref={div2Ref}>
-                        <TerminalIcon className="text-indigo-500" />
-                    </Circle>
-                    <Circle ref={div3Ref}>
-                        <TerminalIcon className="text-orange-500" />
-                    </Circle>
-                    <Circle ref={div4Ref}>
-                        <TerminalIcon className="text-purple-500" />
-                    </Circle>
-                    <Circle ref={div5Ref}>
-                        <TerminalIcon className="text-rose-500" />
-                    </Circle>
+                    <Link href="/services/web-development" className="z-10">
+                        <Circle ref={div1Ref}>
+                            <LaptopIcon className="text-teal-500" />
+                        </Circle>
+                    </Link>
+                    <Link href="/services/mobile-app-development" className="z-10">
+                        <Circle ref={div2Ref}>
+                            <MobileIcon className="text-indigo-500" />
+                        </Circle>
+                    </Link>
+                    <Link href="/services/cloud-solutions-and-migration" className="z-10">
+                        <Circle ref={div3Ref}>
+                            <CloudServerIcon className="text-orange-500" />
+                        </Circle>
+                    </Link>
+                    <Link href="/services/iot-solutions" className="z-10">
+                        <Circle ref={div4Ref}>
+                            <ProcessorIcon className="text-purple-500" />
+                        </Circle>
+                    </Link>
+                    <Link href="/services/data-science-and-analytics" className="z-10">
+                        <Circle ref={div5Ref}>
+                            <CalculatorIcon className="text-rose-500" />
+                        </Circle>
+                    </Link>
                 </div>
                 <div className="flex flex-col justify-center">
                     <Circle ref={div6Ref} className="size-16">
@@ -43,7 +58,7 @@ const TechStack = () => {
                 </div>
                 <div className="flex flex-col justify-center">
                     <Circle ref={div7Ref}>
-                        <UserIcon className="text-gray-600" />
+                        <UserIcon className="text-lime-600" />
                     </Circle>
                 </div>
             </div>

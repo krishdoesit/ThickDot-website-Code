@@ -11,6 +11,11 @@ import TechStack from "@/components/Sections/TechStack";
 import TerminalIcon from "@/components/Icons/Terminal";
 import DollarIcon from "@/components/Icons/Dollar";
 import HeartIcon from "@/components/Icons/Heart";
+import PeopleIcon from "@/components/Icons/People";
+import EarthIcon from "@/components/Icons/Earth";
+import EnergyIcon from "@/components/Icons/Energy";
+import SortHorizontalIcon from "@/components/Icons/SortHorizontal";
+import RulerPenIcon from "@/components/Icons/RulerPen";
 
 import Image from "next/image";
 
@@ -23,6 +28,41 @@ const projects = [
         color: "from-white to-teal-50",
     },
     {
+        title: "Web Development",
+        description: "Create responsive, user-friendly websites that drive engagement, conversions, and growth for your business.",
+        image: "/assets/images/web-development.png",
+        link: "/services/web-development",
+        color: "from-white to-emerald-50",
+    },
+    {
+        title: "Mobile App Development",
+        description: "Innovative mobile app solutions that engage users, drive conversions, and support business growth.",
+        image: "/assets/images/mobile-app-development.png",
+        link: "/services/mobile-app-development",
+        color: "from-white to-rose-50",
+    },
+    {
+        title: "IT Consulting & Strategy",
+        description: "Expert guidance and strategic planning to help you leverage technology for business growth and success.",
+        image: "/assets/images/it-consultancy.png",
+        link: "/services/it-consulting-strategy",
+        color: "from-white to-blue-50",
+    },
+    {
+        title: "IoT Solutions",
+        description: "Cutting-edge IoT solutions that connect devices, collect data, and drive efficiency and innovation.",
+        image: "/assets/images/iot-solutions.png",
+        link: "/services/iot-solutions",
+        color: "from-white to-fuchsia-50",
+    },
+    {
+        title: "Data Science and Analytics",
+        description: "Harness the power of data to drive business growth, optimize operations, and make informed decisions.",
+        image: "/assets/images/data-science-analytics.png",
+        link: "/services/data-science-analytics",
+        color: "from-white to-green-50",
+    },
+    {
         title: "Cloud Services and Migration",
         description: "Unlock the potential of the cloud with tailored strategies, seamless migrations, and optimized management for performance and flexibility.",
         image: "/assets/images/cloud-service.svg",
@@ -30,24 +70,17 @@ const projects = [
         color: "from-white to-sky-50",
     },
     {
-        title: "Data Architecture and Management",
-        description: "Design scalable data models and efficient storage systems that support easy access, high performance, and data integrity.",
-        image: "/assets/images/data-architecture.png",
-        link: "/services/data-architecture-and-management",
-        color: "from-white to-blue-50",
+        title: "Blockchain Development",
+        description: "Secure, transparent, and efficient blockchain solutions that drive innovation, security, and trust.",
+        image: "/assets/images/blockchain-development.png",
+        link: "/services/blockchain-development",
+        color: "from-white to-emerald-50",
     },
     {
-        title: "DevOps and Automation",
-        description: "We set up robust Continuous Integration and Continuous Deployment (CI/CD) pipelines to streamline your software development process, ensuring faster, more reliable software delivery.",
-        image: "/assets/images/devops.svg",
-        link: "/services/devops-and-automation",
-        color: "from-white to-indigo-50",
-    },
-    {
-        title: "Digital Transformation Consulting",
-        description: "We partner with you to create a technology roadmap that aligns with your business objectives, prioritizing scalability, flexibility, and efficiency to support growth.",
-        image: "/assets/images/digital-transformation.png",
-        link: "/services/digital-transformation-consulting",
+        title: "AI and Machine Learning",
+        description: "Cutting-edge AI and machine learning solutions that drive automation, efficiency, and innovation.",
+        image: "/assets/images/ai-machine-learning.png",
+        link: "/services/ai-and-machine-learning",
         color: "from-white to-purple-50",
     },
 ];
@@ -56,12 +89,12 @@ const features = [
     {
         title: "Experienced Team",
         description: "Our developers and technical leads boast over 15+ years of expertise, ensuring world-class quality in every solution.",
-        icon: <TerminalIcon />,
+        icon: <PeopleIcon />,
     },
     {
         title: "Local Management, Global Delivery",
         description: "North American project management meets the technical brilliance of a globally distributed team.",
-        icon: <TerminalIcon />,
+        icon: <EarthIcon />,
     },
     {
         title: "Results-Driven Solutions",
@@ -71,17 +104,17 @@ const features = [
     {
         title: "Modern, Future-Proof Technology",
         description: "We stay ahead of trends, ensuring your solutions remain relevant and competitive.",
-        icon: <TerminalIcon />,
+        icon: <EnergyIcon />,
     },
     {
         title: "Transparent Collaboration",
         description: "We prioritize communication and cultural understanding, bridging gaps to ensure seamless collaboration.",
-        icon: <TerminalIcon />,
+        icon: <SortHorizontalIcon />,
     },
     {
         title: "Attention to Detail",
         description: "We’re meticulous in every phase, ensuring our solutions align with your business goals and deliver measurable results.",
-        icon: <TerminalIcon />,
+        icon: <RulerPenIcon />,
     },
     {
         title: "Seamless Integration",
