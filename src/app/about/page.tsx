@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+"use client";
+
 import SelectedText from "@/components/Animation/SelectedText";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
@@ -17,11 +18,6 @@ import EarthIcon from "@/components/Icons/Earth";
 import EnergyIcon from "@/components/Icons/Energy";
 import SortHorizontalIcon from "@/components/Icons/SortHorizontal";
 import RulerPenIcon from "@/components/Icons/RulerPen";
-
-export const metadata: Metadata = {
-    title: "About Us",
-    description: "At Infinia Tech Solutions, we bridge the gap between cutting-edge technology and real-world business needs.",
-};
 
 const pros = [
     {
@@ -94,6 +90,13 @@ const features = [
 const About = () => {
     const words = ["Startup", "Small Business", "Medium Business", "Enterprise"];
 
+    const handleClick = () => {
+        const element = document.getElementById("hero");
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <>
             <div className="flex flex-col-reverse gap-10 px-6 py-10 md:gap-4 lg:flex-row">
@@ -106,7 +109,7 @@ const About = () => {
                         <Button color="primary" radius="full" as={Link} href="/contact">
                             Get Started
                         </Button>
-                        <Button variant="flat" className="bg-gray-200" radius="full" href="#hero">
+                        <Button variant="flat" className="bg-gray-200" radius="full" href="#hero" onPress={() => handleClick()}>
                             Learn More
                         </Button>
                     </div>
@@ -116,7 +119,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div id="hero" className="m-4 max-w-full rounded-3xl bg-[url('/assets/images/tech-person.png')] bg-cover bg-left-top bg-no-repeat p-8 md:p-20">
+            <div id="hero" className="m-4 max-w-full rounded-3xl bg-[url('/assets/images/tech-person.webp')] bg-cover bg-left-top bg-no-repeat p-8 md:p-20">
                 <div className="flex max-w-2xl flex-col justify-center gap-10">
                     <div className="flex flex-col gap-3 text-6xl font-black tracking-wide text-white">
                         <span>
