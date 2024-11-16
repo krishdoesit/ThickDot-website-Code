@@ -32,3 +32,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #b5b9be;
 }
+
+.service-card:hover {
+    transition: all 0.3s;
+    transform: scale(1.02);
+}

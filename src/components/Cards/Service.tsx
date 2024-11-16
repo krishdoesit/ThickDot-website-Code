@@ -4,7 +4,7 @@ import ArrowRightIcon from "../Icons/ArrowRight";
 
 const Service = ({ title, description, image, link, color }: { title: string; description: string; image: string; link: string; color: string }) => {
     return (
-        <Card className={`border border-divider bg-gradient-to-t ${color} p-4 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-xl`}>
+        <Card className={`service-card border border-divider bg-gradient-to-t ${color} p-4 shadow-sm hover:shadow-xl`}>
             <CardHeader className="w-full">
                 <Image src={image} alt={title} className="h-auto w-full rounded-xl" width={500} height={500} />
             </CardHeader>
