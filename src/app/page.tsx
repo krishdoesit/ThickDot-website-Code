@@ -154,7 +154,7 @@ export default function Home() {
                     </h2>
                     <p className="text-center text-gray-600">We offer a wide range of services to meet your needs.</p>
                 </div>
-                <div className="mx-auto mt-8 w-full max-w-7xl columns-1 gap-10 p-2 md:columns-2 lg:columns-3 [&>div:not(:first-child)]:mt-8">
+                <div className="mx-auto mt-8 grid w-full max-w-7xl grid-cols-1 gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3">
                     {projects.map((project) => (
                         <Service key={project.title} title={project.title} description={project.description} image={project.image} link={project.link} color={project.color} />
                     ))}

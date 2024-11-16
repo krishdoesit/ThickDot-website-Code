@@ -184,7 +184,7 @@ const MobileAppDevelopment = () => {
                     </h2>
                     <p className="text-center text-gray-600">We offer a range of solutions to meet your unique needs and deliver exceptional results.</p>
                 </div>
-                <div className="columns-1 gap-4 p-2 md:columns-2 lg:columns-3 xl:columns-4 [&>div:not(:first-child)]:mt-4">
+                <div className="grid grid-cols-1 gap-4 p-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {solutions.map((solution) => (
                         <Solution key={solution.title} title={solution.title} description={solution.description} icon={solution.icon} />
                     ))}

@@ -41,7 +41,7 @@ export default function HeroSlider() {
     };
 
     return (
-        <div className="flex h-fit max-h-[752px] flex-col gap-6 px-4 py-4 md:flex-row md:py-8 xl:px-8">
+        <div className="flex h-fit flex-col gap-6 px-4 py-4 md:max-h-[752px] md:flex-row md:py-8 xl:px-8">
             <div className="flex flex-1 flex-col gap-10 rounded-2xl bg-primary-500 p-10 md:p-16">
                 <div className="flex flex-col gap-4">
                     <span className="bg-gradient-to-t from-slate-100 via-blue-200 to-indigo-200 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl 2xl:text-8xl">Create.</span>
