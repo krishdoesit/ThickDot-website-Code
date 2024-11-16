@@ -30,11 +30,11 @@ export default function RootLayout({
                 <link rel="icon" type="image/png" sizes="16x16" href={"/favicons/favicon-16x16.png"} />
                 <link rel="manifest" href={"/favicons/site.webmanifest"} />
             </head>
-            <body className={`${inter.className} overflow-x-hidden bg-white antialiased`}>
+            <body className={`${inter.className} h-screen overflow-x-hidden bg-white antialiased`}>
                 <Providers>
                     <NextTopLoader color="#3b82f6" zIndex={999} />
                     <Navigation />
-                    <main className="mx-auto w-full max-w-screen-2xl">{children}</main>
+                    <main className="mx-auto w-full max-w-screen-2xl flex-1">{children}</main>
                     <Footer />
                     <Toaster richColors theme="system" toastOptions={{ className: "shadow" }} />
                 </Providers>

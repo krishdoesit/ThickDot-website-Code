@@ -5,5 +5,9 @@ import { useRouter } from "nextjs-toploader/app";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
     const router = useRouter();
-    return <NextUIProvider navigate={router.push}>{children}</NextUIProvider>;
+    return (
+        <NextUIProvider className="flex h-full flex-col" navigate={router.push}>
+            {children}
+        </NextUIProvider>
+    );
 }
