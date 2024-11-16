@@ -118,7 +118,7 @@ const Navigation = () => {
                 <Link href={"/"}>
                     <NavbarBrand className="grow-0 gap-2">
                         <LogoIcon size={52} />
-                        <span className="hidden text-2xl font-bold tracking-wide text-primary-500 md:block">Infinia Tech</span>
+                        <span className="block text-xl font-bold tracking-wide text-primary-500 sm:text-2xl">Infinia Tech</span>
                     </NavbarBrand>
                 </Link>
             </NavbarContent>
