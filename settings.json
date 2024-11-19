@@ -11,7 +11,7 @@
                 { "name": "IT Consultancy and Strategy", "url": "/services/it-consultancy-and-strategy" },
                 { "name": "IoT Solutions", "url": "/services/iot-solutions" },
                 { "name": "Data Science and Analytics", "url": "/services/data-science-and-analytics" },
-                { "name": "Cloud Services and Migration", "url": "/services/cloud-solutions-and-migration" },
+                { "name": "Cloud Services and Migration", "url": "/services/cloud-services-and-migration" },
                 { "name": "Blockchain Development", "url": "/services/blockchain-development" },
                 { "name": "AI and Machine Learning", "url": "/services/ai-and-machine-learning" }
             ]

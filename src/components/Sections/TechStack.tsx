@@ -35,7 +35,7 @@ const TechStack = () => {
                             <MobileIcon className="text-indigo-500" />
                         </Circle>
                     </Link>
-                    <Link href="/services/cloud-solutions-and-migration" className="z-10">
+                    <Link href="/services/cloud-services-and-migration" className="z-10">
                         <Circle ref={div3Ref}>
                             <CloudServerIcon className="text-orange-500" />
                         </Circle>

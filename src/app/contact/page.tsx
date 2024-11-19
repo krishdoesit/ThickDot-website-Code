@@ -40,7 +40,7 @@ const Contact = () => {
             <p><strong>Message:</strong></p>
             <p>${message.replace(/\n/g, "<br>")}</p>
         `;
-        const response = await sendEmail(name, email, "New message from Infinia Tech Solutions", html);
+        const response = await sendEmail(name, email, "New message from ThickDot", html);
 
         if (response) {
             toast.success("Message sent successfully!");

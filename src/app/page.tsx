@@ -45,7 +45,7 @@ const projects = [
         title: "IT Consulting & Strategy",
         description: "Expert guidance and strategic planning to help you leverage technology for business growth and success.",
         image: "/assets/images/it-consultancy.png",
-        link: "/services/it-consulting-strategy",
+        link: "/services/it-consultancy-and-strategy",
         color: "from-white to-blue-50",
     },
     {
@@ -179,7 +179,7 @@ export default function Home() {
                     Develop Your <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Dream Software</span> with Us
                 </h2>
                 <div className="border-b-2 border-t-2 border-dashed border-gray-300 py-8">
-                    <p className="mx-auto max-w-3xl px-4 py-6 text-center text-gray-600">Welcome to Infinia Tech Solutions, where technology and innovation meet to drive your business forward. We specialize in providing cutting-edge solutions across software development, cloud services, data management, DevOps, digital transformation, and business intelligence.</p>
+                    <p className="mx-auto max-w-3xl px-4 py-6 text-center text-gray-600">Welcome to ThickDot, where technology and innovation meet to drive your business forward. We specialize in providing cutting-edge solutions across software development, cloud services, data management, DevOps, digital transformation, and business intelligence.</p>
                 </div>
                 <div className="flex w-full justify-center">
                     <TechStack />

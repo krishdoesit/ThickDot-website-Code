@@ -14,11 +14,11 @@ const Footer = () => {
                 <div className="flex flex-col items-center gap-4 sm:flex-row">
                     <LogoIcon size={58} />
                     <div className="flex flex-col items-center sm:items-start">
-                        <span className="text-2xl font-bold text-gray-700">Infinia Tech Solutions</span>
+                        <span className="text-2xl font-bold text-gray-700">ThickDot</span>
                         <span className="text-small font-medium text-gray-500">{"© 2024."} All rights reserved</span>
                     </div>
                 </div>
-                <p className="text-gray-600">At Infinia Tech Solutions, we bridge the gap between cutting-edge technology and real-world business needs.</p>
+                <p className="text-gray-600">At ThickDot, we bridge the gap between cutting-edge technology and real-world business needs.</p>
                 <div className="flex gap-4">
                     <Link href={settings.social[0].url} className="rounded-xl border border-divider p-2 text-gray-600 hover:bg-gray-100 hover:text-primary">
                         <TwitterIcon size={20} />

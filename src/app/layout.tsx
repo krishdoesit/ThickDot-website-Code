@@ -9,10 +9,10 @@ import "@/styles/globals.css";
 
 export const metadata: Metadata = {
     title: {
-        default: "Infinia Tech Solutions",
-        template: "%s - Infinia Tech Solutions",
+        default: "ThickDot",
+        template: "%s - ThickDot",
     },
-    description: "Get your business online with Infinia Tech Solutions",
+    description: "Get your business online with ThickDot. We offer web development, design, and business services.",
 };
 
 const inter = Inter({ subsets: ["latin"] });
