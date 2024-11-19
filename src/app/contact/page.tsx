@@ -72,7 +72,7 @@ const Contact = () => {
                         <div className="flex flex-col gap-8 text-gray-300">
                             <div className="flex items-center gap-4">
                                 <PhoneIcon size={28} />
-                                <p className="text-lg font-medium">+44 020 7946 0958</p>
+                                <p className="text-lg font-medium">+1 (437)-986-2272</p>
                             </div>
                             <div className="flex items-center gap-4">
                                 <EmailIcon size={28} />
@@ -80,7 +80,7 @@ const Contact = () => {
                             </div>
                             <div className="flex items-center gap-4">
                                 <LocationIcon size={28} />
-                                <p className="text-lg font-medium">123 Anywhere, Any City, NY 12345</p>
+                                <p className="text-lg font-medium">Winnipeg, MB</p>
                             </div>
                         </div>
                         <div className="flex gap-6">

@@ -69,7 +69,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-3">
                     <p className="flex items-center gap-2 text-gray-600">
                         <PhoneIcon size={22} />
-                        +44 020 7946 0958
+                        +1 (437)-986-2272
                     </p>
                     <p className="flex items-center gap-2 text-gray-600">
                         <EmailIcon size={22} />
