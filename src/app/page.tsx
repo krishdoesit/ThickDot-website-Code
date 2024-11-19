@@ -59,7 +59,7 @@ const projects = [
         title: "Data Science and Analytics",
         description: "Harness the power of data to drive business growth, optimize operations, and make informed decisions.",
         image: "/assets/images/data-science-analytics.png",
-        link: "/services/data-science-analytics",
+        link: "/services/data-science-and-analytics",
         color: "from-white to-green-50",
     },
     {
