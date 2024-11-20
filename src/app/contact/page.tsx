@@ -67,7 +67,7 @@ const Contact = () => {
                     <div className="relative flex h-full w-full flex-col justify-between gap-16 overflow-hidden rounded-2xl bg-gray-900 p-6 text-white md:p-10">
                         <div>
                             <h3 className="text-2xl font-semibold">Contact Information</h3>
-                            <p className="text-lg text-gray-400">Say something to start a live chat!</p>
+                            <p className="text-lg text-gray-400">Say something to start a chat!</p>
                         </div>
                         <div className="flex flex-col gap-8 text-gray-300">
                             <div className="flex items-center gap-4">

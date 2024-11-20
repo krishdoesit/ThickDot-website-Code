@@ -157,7 +157,7 @@ const WebDevelopment = () => {
             <div className="flex flex-col gap-10 px-6">
                 <div className="mx-3 mb-8 flex flex-col items-center gap-2 sm:mx-8">
                     <h2 className="text-center text-4xl font-bold text-gray-700">
-                        <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Approach</span> To Be Used
+                    Our <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Approach</span>: Phases and Process
                     </h2>
                     <p className="text-center text-gray-600">How we work to deliver the best web development solutions.</p>
                 </div>
@@ -170,7 +170,7 @@ const WebDevelopment = () => {
             <div className="flex flex-col gap-10 px-6">
                 <div className="mx-3 flex flex-col items-center gap-2 sm:mx-8">
                     <h2 className="text-center text-4xl font-bold text-gray-700">
-                        What <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">We Are Doing</span> For This?
+                        Our <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Web Development</span> Solutions
                     </h2>
                     <p className="text-center text-gray-600">We offer a range of solutions to meet your unique needs and deliver exceptional results.</p>
                 </div>

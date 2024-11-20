@@ -104,7 +104,7 @@ const About = () => {
                     <h2 className="text-3xl font-bold !leading-snug text-gray-700 md:text-4xl xl:text-5xl">
                         We are an <SelectedText text="AI-Powered" /> company that makes dreams come true.
                     </h2>
-                    <p>At ThickDot, we bridge the gap between cutting-edge technology and real-world business needs. Headquartered in North America, we bring you the best of both worlds: a locally managed presence to ensure seamless communication and cultural alignment, and a globally experienced technical team based in India with over 15+ years of expertise. This unique model allows us to deliver innovative, cost-effective solutions tailored to your specific goals.</p>
+                    <p>At ThickDot, we bridge the gap between cutting-edge technology and real-world business needs. Headquartered in North America, we bring you the best of both worlds: a locally managed presence to ensure seamless communication and cultural alignment, and a globally experienced technical team with over 15+ years of expertise. This unique model allows us to deliver innovative, cost-effective solutions tailored to your specific goals.</p>
                     <div className="mt-4 flex gap-4 md:mt-8">
                         <Button color="primary" radius="full" as={Link} href="/contact">
                             Get Started
