@@ -53,7 +53,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="flex flex-col gap-6 lg:max-w-md">
-                <h3 className="text-lg font-semibold text-gray-700">Services</h3>
+                <h3 className="text-lg font-semibold text-gray-700">Policies</h3>
                 <ul className="flex flex-col gap-3">
                     {settings.footer3.map((item) => (
                         <li key={item.name}>

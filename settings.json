@@ -20,12 +20,18 @@
     "footer1": [
         { "name": "Home", "url": "/" },
         { "name": "About", "url": "/about" },
-        { "name": "Services", "url": "/services" }
+        { "name": "Contact", "url": "/contact" }
     ],
     "footer2": [
         { "name": "Web Development", "url": "/services/web-development" },
         { "name": "Software Development", "url": "/services/software-development" },
-        { "name": "Mobile App Development", "url": "/services/mobile-app-development" }
+        { "name": "Mobile App Development", "url": "/services/mobile-app-development" },
+        { "name": "IT Consultancy and Strategy", "url": "/services/it-consultancy-and-strategy" },
+        { "name": "IoT Solutions", "url": "/services/iot-solutions" },
+        { "name": "Data Science and Analytics", "url": "/services/data-science-and-analytics" },
+        { "name": "Cloud Services and Migration", "url": "/services/cloud-services-and-migration" },
+        { "name": "Blockchain Development", "url": "/services/blockchain-development" },
+        { "name": "AI and Machine Learning", "url": "/services/ai-and-machine-learning" }
     ],
     "footer3": [
         { "name": "Privacy Policy", "url": "/privacy-policy" },

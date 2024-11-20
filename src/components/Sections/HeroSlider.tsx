@@ -43,18 +43,18 @@ export default function HeroSlider() {
     return (
         <div className="flex h-fit flex-col gap-6 px-4 py-4 md:max-h-[752px] md:flex-row md:py-8 xl:px-8">
             <div className="flex flex-1 flex-col gap-10 rounded-2xl bg-primary-500 p-10 md:p-16">
-                <div className="flex flex-col gap-4">
-                    <span className="bg-gradient-to-t from-slate-100 via-blue-200 to-indigo-200 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl 2xl:text-8xl">Create.</span>
-                    <span className="bg-gradient-to-t from-slate-100 via-blue-200 to-indigo-200 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl 2xl:text-8xl">Captivate.</span>
-                    <span className="bg-gradient-to-t from-slate-100 via-blue-200 to-indigo-200 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl 2xl:text-8xl">Inspire.</span>
+                <div className="flex flex-col gap-1 sm:gap-4">
+                    <span className="bg-gradient-to-t from-slate-100 via-blue-200 to-indigo-200 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl lg:text-6xl 2xl:text-7xl">Put a Thick Dot</span>
+                    <span className="bg-gradient-to-t from-slate-100 via-blue-200 to-indigo-200 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl lg:text-6xl 2xl:text-7xl">on Tech Worries</span>
+                    <span className="bg-gradient-to-t from-slate-100 via-blue-200 to-indigo-200 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl lg:text-6xl 2xl:text-7xl">We’ve Got It Covered</span>
                 </div>
                 <p className="w-full text-lg text-gray-100 md:w-3/4 md:text-xl">Transform your brand, unleash the power of digital with us and turn bold visions into market success. We are a team of passionate individuals who are dedicated to helping you achieve your goals.</p>
                 <div className="mt-auto flex flex-col gap-6 md:flex-row">
                     <Button variant="solid" className="bg-gray-50 font-medium text-gray-700" radius="full" size="lg" as={Link} href="/contact">
                         Get Started
                     </Button>
-                    <Button variant="flat" className="bg-white/20 font-medium text-gray-100 backdrop-blur" radius="full" size="lg" as={Link} href="/services">
-                        Explore Services
+                    <Button variant="flat" className="bg-white/20 font-medium text-gray-100 backdrop-blur" radius="full" size="lg" as={Link} href="/about">
+                        Learn More
                     </Button>
                 </div>
             </div>
