@@ -69,12 +69,12 @@ const Footer = () => {
                 <div className="flex flex-col gap-3">
                     <p className="flex items-center gap-2 text-gray-600">
                         <PhoneIcon size={22} />
-                        +1 (437)-986-2272
+                        <Link href="tel:+14379862272">+1 (437)-986-2272</Link>
                     </p>
                     <p className="flex items-center gap-2 text-gray-600">
                         <EmailIcon size={22} />
                         <Link href="mailto:info@thickdot.com" className="hover:text-primary">
-                            info@thickdot.com
+                            <Link href="mailto:info@thickdot.com">info@thickdot.com</Link>
                         </Link>
                     </p>
                 </div>

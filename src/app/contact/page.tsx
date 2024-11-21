@@ -72,11 +72,15 @@ const Contact = () => {
                         <div className="flex flex-col gap-8 text-gray-300">
                             <div className="flex items-center gap-4">
                                 <PhoneIcon size={28} />
-                                <p className="text-lg font-medium">+1 (437)-986-2272</p>
+                                <p className="text-lg font-medium">
+                                    <Link href="tel:+14379862272">+1 (437)-986-2272</Link>
+                                </p>
                             </div>
                             <div className="flex items-center gap-4">
                                 <EmailIcon size={28} />
-                                <p className="text-lg font-medium">info@thickdot.com</p>
+                                <p className="text-lg font-medium">
+                                    <Link href="mailto:info@thickdot.com">info@thickdot.com</Link>
+                                </p>
                             </div>
                             <div className="flex items-center gap-4">
                                 <LocationIcon size={28} />
