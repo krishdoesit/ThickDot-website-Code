@@ -159,7 +159,7 @@ const About = () => {
 
             <div className="mx-3 flex flex-col items-center gap-2 sm:mx-8">
                 <h2 className="text-center text-4xl font-bold text-gray-700">
-                    Why <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">Infinia</span> Tech?
+                    Why <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent">ThickDot</span> ?
                 </h2>
                 <p className="text-center text-gray-600">Passionate about building software that is both functional and easy to use.</p>
             </div>

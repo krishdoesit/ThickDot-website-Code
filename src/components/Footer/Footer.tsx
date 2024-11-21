@@ -73,8 +73,8 @@ const Footer = () => {
                     </p>
                     <p className="flex items-center gap-2 text-gray-600">
                         <EmailIcon size={22} />
-                        <Link href="mailto:info@infiniatechsolutions.com" className="hover:text-primary">
-                            info@infiniatechsolutions.com
+                        <Link href="mailto:info@thickdot.com" className="hover:text-primary">
+                            info@thickdot.com
                         </Link>
                     </p>
                 </div>
