@@ -5,9 +5,9 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const slides = [
-    { id: 1, name: "Freddie Halvorson", position: "Chief Operations Officer", image: "/assets/images/ai-technology.jpg" },
-    { id: 2, name: "Alex Johnson", position: "Marketing Director", image: "/assets/images/ai-technology.jpg" },
-    { id: 3, name: "Emily Parker", position: "Product Manager", image: "/assets/images/ai-technology.jpg" },
+    { id: 1, name: "Automation & Efficiency", description: "Our solutions ensure seamless workflows, reducing downtime and boosting productivity.", image: "/assets/images/test-tech.jpg" },
+    { id: 2, name: "AI and IoT Integration", description: "Transform your operations with data-driven insights and intelligent devices.", image: "/assets/images/iot-integration.jpg" },
+    { id: 3, name: "Innovative Software Solutions", description: "We craft powerful software tailored to meet your business needs with seamless functionality and cutting-edge technologies.", image: "/assets/images/innovative-software.jpg" },
 ];
 
 export default function HeroSlider() {
@@ -63,9 +63,9 @@ export default function HeroSlider() {
                     {slides.map((slide, index) => (
                         <div key={index} style={{ backgroundImage: `url(${slide.image})`, backgroundSize: "cover", backgroundPosition: "center" }} className={`absolute inset-0 top-0 h-full w-full overflow-hidden rounded-2xl transition-transform duration-700 ease-in-out ${index === currentSlide ? "translate-x-0 transform" : direction === "right" ? "translate-x-full transform" : "-translate-x-full transform"}`}>
                             <div className="flex h-full w-full flex-col rounded-lg text-center">
-                                <div className="mt-auto bg-gradient-to-t from-gray-900 to-transparent py-6">
+                                <div className="mt-auto bg-gradient-to-t from-gray-900 to-transparent px-3 py-6">
                                     <h2 className="text-3xl font-semibold text-gray-50">{slide.name}</h2>
-                                    <p className="text-medium text-gray-100">{slide.position}</p>
+                                    <p className="mt-1.5 text-medium text-gray-100">{slide.description}</p>
                                 </div>
                             </div>
                         </div>
