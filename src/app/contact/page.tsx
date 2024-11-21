@@ -76,7 +76,7 @@ const Contact = () => {
                             </div>
                             <div className="flex items-center gap-4">
                                 <EmailIcon size={28} />
-                                <p className="text-lg font-medium">info@example.com</p>
+                                <p className="text-lg font-medium">info@thickdot.com</p>
                             </div>
                             <div className="flex items-center gap-4">
                                 <LocationIcon size={28} />
