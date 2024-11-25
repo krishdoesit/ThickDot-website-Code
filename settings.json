@@ -34,9 +34,9 @@
         { "name": "AI and Machine Learning", "url": "/services/ai-and-machine-learning" }
     ],
     "footer3": [
-        { "name": "Privacy Policy", "url": "/privacy-policy" },
-        { "name": "Terms of Service", "url": "/terms-of-service" },
-        { "name": "DMCA", "url": "/dmca" }
+        { "name": "Privacy Policy", "url": "/legal/privacy-policy" },
+        { "name": "Terms of Service", "url": "/legal/terms-of-service" },
+        { "name": "DMCA", "url": "/legal/dmca" }
     ],
     "social": [
         { "name": "Twitter", "url": "https://www.twitter.com" },
