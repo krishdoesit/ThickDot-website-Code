@@ -9,7 +9,6 @@
                 { "name": "Software Development", "url": "/services/software-development" },
                 { "name": "Mobile App Development", "url": "/services/mobile-app-development" },
                 { "name": "IT Consultancy and Strategy", "url": "/services/it-consultancy-and-strategy" },
-                { "name": "Data Science and Analytics", "url": "/services/data-science-and-analytics" },
                 { "name": "Cloud Services and Migration", "url": "/services/cloud-services-and-migration" },
                 { "name": "AI and Machine Learning", "url": "/services/ai-and-machine-learning" }
             ]
@@ -25,7 +24,6 @@
         { "name": "Software Development", "url": "/services/software-development" },
         { "name": "Mobile App Development", "url": "/services/mobile-app-development" },
         { "name": "IT Consultancy and Strategy", "url": "/services/it-consultancy-and-strategy" },
-        { "name": "Data Science and Analytics", "url": "/services/data-science-and-analytics" },
         { "name": "Cloud Services and Migration", "url": "/services/cloud-services-and-migration" },
         { "name": "AI and Machine Learning", "url": "/services/ai-and-machine-learning" }
     ],
